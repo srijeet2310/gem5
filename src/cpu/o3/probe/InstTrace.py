@@ -41,7 +41,8 @@ class InstTrace(ProbeListenerObject):
     cxx_header = 'cpu/o3/probe/inst_trace.hh'
 
     # Trace file for the following params are created in the output directory.
-    instTraceFile = Param.String("inst_trace.gz", "Protobuf trace file name")
+    instTraceFile = Param.String("inst_trace.gz",
+                                 "Protobuf file name for instruction trace.")
 
 # # The committed instruction count from which to start tracing
 # startTraceInst = Param.UInt64(0, "The number of committed instructions " \
